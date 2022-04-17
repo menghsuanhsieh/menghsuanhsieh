@@ -1,0 +1,68 @@
+---
+title: 'Slightly-different'
+date: 2022-04-01
+permalink: /posts/2022/04/test-blog-2/
+usemathjax: true
+tags:
+  - test blog
+  - category1
+  - category2
+---
+
+This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`. 
+
+Some algebraic formulae:
+$$ E = mc^2 $$
+
+$$
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+$$
+
+
+Define
+
+$$
+\begin{equation}
+	\begin{aligned}
+	\nu : \Psi &\to \mathbb{R} \\
+	\psi &\mapsto \nu_y^0 (y) u + \sum_i \nu_z^0 (z_i; y) g(z_i)
+	\end{aligned}
+\end{equation}
+$$
+
+where $\nu_y^0$ denotes the worker's value of unemployment at the start of the separation stage, and $\nu_z^0$ denotes the joint value of firm and worker's values at the start of the separation stage.
+
+Slightly rewrite the joint optimization problem as
+$$
+\begin{align*}
+	T h (\psi) = \max_{d, \theta_u, \theta_z (z), \widehat{u}, \widehat{g} (z) } \quad \widehat{u} b + \sum_{i} (y + z_i) \widehat{g} (z_i) - k \left[ \lambda_u u \theta_u + \lambda_e \sum_{i} (1-d(z_i)) g(z_i) \theta_{z} (z_i) \right] + \beta \mathbb{E} h(\widehat{\psi})
+\end{align*}
+$$
+I will show that $\nu$ is a fixed point of the functional map $Th$.
+
+For $\nu$ as defined, apply envelope theorem to $T\nu(\psi)$ and we have
+$$
+\begin{align*}
+	T\nu_u^0 (y) = -k \lambda_u \theta'_u (y) + (1 - \lambda_u p'(\theta_u)) [b + \beta \mathbb{E} \nu_u^0 (\widehat{y})] + \lambda_u p'(\theta_u) \left[ y + \beta \mathbb{E} \sum_i \nu_z^0 (z_i; \widehat{y}) f(z_i) \right] 
+\end{align*}
+$$
+and $\nu_u (\widehat{y}) = \nu_u^0 (y)$, plus $\nu_z (z_i; \widehat{y}) = \nu_z^0 (z_i; y)$. Recall $\nu_u^0 (y)$ and $ \nu_z^0 (z_i; y)$ are maximal values. Therefore,
+$$
+\begin{align*}
+	T\nu (\psi) = \nu(\psi)
+\end{align*}
+$$
+i.e. the efficient allocations solve the planner's problem.

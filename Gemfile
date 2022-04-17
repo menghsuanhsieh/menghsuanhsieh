@@ -24,4 +24,12 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
   gem 'hawkins'
+  gem "jekyll-include-cache"
+  gem "kramdown-parser-gfm"
+  gem "jekyll-remote-theme"
+  gem "kramdown"
 end
+
+gem "webrick", "~> 1.7"
+gem "minimal-mistakes-jekyll"
+gem "minima"
