@@ -28,6 +28,7 @@ group :jekyll_plugins do
   gem "kramdown-parser-gfm"
   gem "jekyll-remote-theme"
   gem "kramdown"
+  gem "jekyll-algolia"
 end
 
 gem "webrick", "~> 1.7"
