@@ -22,10 +22,24 @@
 
 
 <!-- MathJax -->
-<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<!-- ><script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <script type="text/x-mathjax-config">
+  var font = "Latin-Modern";
   MathJax.Hub.Config({
+	  "SVG":{ 
+		font:font
+	  },
+	  "HTML-CSS": {
+		webFont: font,
+		imageFont: font,
+		preferredFont: font,
+		availableFonts: [],
+		scale: 95,
+		mtextFontInherit: true
+	  },
       tex2jax: {
           inlineMath: [
               ['$', '$'],
@@ -43,7 +57,7 @@
           'a11y/accessibility-menu.js',
       ],
       TeX: {
-          extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js', 'mathtools.js'],
+          extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js', 'mathtools.js', 'bbm.js'],
           equationNumbers: {
               autoNumber: 'AMS',
           },
