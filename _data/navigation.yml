@@ -1,7 +1,7 @@
 # main links links
 main:
         
-  - title: "Blog Posts"
+  - title: "Notes and Posts"
     url: /year-archive/
 
   - title: "Research"
@@ -22,5 +22,5 @@ main:
   - title: "Guide"
     url: /markdown/
     
-  - title: "Search"
-    url: /search/
+  #- title: "Search"
+  #  url: /search/
