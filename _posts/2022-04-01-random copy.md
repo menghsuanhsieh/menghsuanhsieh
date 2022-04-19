@@ -9,10 +9,8 @@ tags:
   - category2
 ---
 
-This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`. 
+Some algebraic formula: $$ E = mc^2 $$
 
-Some algebraic formulae:
-$$ E = mc^2 $$
 
 $$
 \begin{align*}
