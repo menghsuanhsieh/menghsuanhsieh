@@ -61,8 +61,14 @@
           equationNumbers: {
               autoNumber: 'AMS',
           },
+          macros: {
+		      RR: "{\\bf R}",
+      		bold: ["{\\bf #1}", 1]
+   		 },
           environments: {
-			  lemma: ["Lemma. ", 1]
+			  lemma: ["Lemma. "],
+			  braced: ['\\left\\{', '\\right\\}'],
+			  ABC: ['(#1)(#2)(', ')', 2, 'X']
 		  },
           tagSide: "left"
       },
