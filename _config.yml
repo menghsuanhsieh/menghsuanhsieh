@@ -336,3 +336,10 @@ footer-col: "#EAEAEA"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 footer-hover-col: "#0085A1"
+
+
+reveal:
+  slide_separator:    "<hr />"
+  vertical_separator: "<p>~~</p>"
+  notes_separator:    "<p>Notes:</p>"
+  title_slides:       true
