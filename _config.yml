@@ -81,7 +81,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-
+    - "https://www.linkedin.com/in/menghsuanhsieh/"
 
 # Analytics
 analytics:
@@ -108,14 +108,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "menghsuanhsieh"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "menghsuanhsieh"
+  orcid            : "https://orcid.org/0000-0002-8382-5352"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -177,6 +177,7 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
+  math_engine: mathjax
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1

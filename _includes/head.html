@@ -41,12 +41,21 @@
 		mtextFontInherit: true
 	  },
       tex2jax: {
+       	  processEscapes: true,
+        processEnvironments: true,
+        processRefs: true,
+      	packages: {'[+]': ['newcommand', 'color']},
           inlineMath: [
               ['$', '$'],
-              ['\\(', '\\)'],
+              ['\\(', '\\)']
           ],
 		  displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-		  processEscapes: true
+        digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
+        tags:  'ams',
+        tagSide: 'right',
+        tagIndent: '0.8em', 
+        useLabelIds: true,  
+        multlineWidth: '85%'
       },
       jax: ['input/TeX', 'input/MathML', 'input/AsciiMath', 'output/CommonHTML'],
       extensions: [
@@ -57,20 +66,36 @@
           'a11y/accessibility-menu.js',
       ],
       TeX: {
-          extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js', 'mathtools.js', 'bbm.js'],
+          extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js', 'mathtools.js', 'bbm.js', 'newcommand.js', 'color.js'],
           equationNumbers: {
               autoNumber: 'AMS',
           },
-          macros: {
-		      RR: "{\\bf R}",
-      		bold: ["{\\bf #1}", 1]
-   		 },
+          
+          tagSide: "left",
+          packages: {'[+]': ['newcommand', 'color']},
+          inlineMath: [
+              ['$', '$'],
+              ['\\(', '\\)'],
+          ],
+          Macros: {
+     		 RR: "{\\bf R}",
+    		  bold: ["{\\bf #1}",1]
+   			 },
           environments: {
 			  lemma: ["Lemma. "],
 			  braced: ['\\left\\{', '\\right\\}'],
 			  ABC: ['(#1)(#2)(', ')', 2, 'X']
 		  },
-          tagSide: "left"
+		  displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+		  processEscapes: true,
+        processEnvironments: true,
+        processRefs: true,
+        digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
+        tags:  'ams',
+        tagSide: 'right',
+        tagIndent: '0.8em', 
+        useLabelIds: true,  
+        multlineWidth: '85%'
       },
-  })
+  });
 </script>
