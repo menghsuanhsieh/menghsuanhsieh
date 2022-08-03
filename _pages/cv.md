@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,22 +10,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* **Ph.D.** in Economics, University of Michigan - Ann Arbor, 2026 (Expected)
+* **B.A.** in Economics and Mathematics, New York University, December 2018
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
 Skills
 ======
 * Skill 1
@@ -53,7 +39,19 @@ Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
+
+Work experience
+======
+* Researcher, NERA Economic Consulting, 2019-2021
+  * Performed econometric analyses to study competitive harm, price fixing, economic damage from violations of WTO treaties, and other antitrust issues arising from proposed mergers and acquisitions.
+  * Evaluated magnitude and severity of potential antitrust concerns by analyzing public and parties' proprietary datasets using R, STATA, SAS, Python, and SQL.
+  * Analysed spatial competitive overlaps of merging parties by drawing maps in ArcGIS.
+  * Prepared exhibits to present analyses and findings to counsel.
+
+Community Involvement
 ======
 * Currently signed in to 43 different slack teams
+
+<!---
+title: "CV"
+--->

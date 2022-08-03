@@ -7,7 +7,7 @@ main:
   - title: "Research"
     url: /publications/
 
-  - title: "Talks"
+  - title: "Presentations"
     url: /talks/    
 
   - title: "Teaching"
@@ -19,8 +19,8 @@ main:
   - title: "CV"
     url: /cv/
     
-  - title: "Guide"
-    url: /markdown/
+  #- title: "Guide"
+  #  url: /markdown/
     
   #- title: "Search"
   #  url: /search/

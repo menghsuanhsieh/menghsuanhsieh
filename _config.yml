@@ -19,7 +19,7 @@ baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "menghsuanhsieh/menghsuanhsieh.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
+words_per_minute         : 100
 future                   : false #true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
@@ -55,11 +55,6 @@ post_search              : true
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : "lunr"
-#algolia:
-#  application_id         : "QB6HVGBSBA"
-#  index_name             : "dev_minimal-mistakes"
-#  search_only_api_key    : "9d5014e5bbc77372547bce778dfa5663"
-#  powered_by             : true
 
 # SEO Related
 google_site_verification :
